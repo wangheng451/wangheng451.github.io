@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ⬇⬇⬇ 把 Your Name 改成你的真实姓名(要和 AAAI/OpenReview 里填的一致) -->
-  <title>Your Name — Homepage</title>
-  <meta name="description" content="Personal homepage of Your Name" />
+  <title>Li Chengaung — Homepage</title>
+  <meta name="description" content="Personal homepage of Li Chengaung, Central South University — research on large language models, risk analysis, and autonomous driving." />
   <style>
     :root {
       --bg: #ffffff;
       --fg: #1a1a1a;
       --muted: #5a5a5a;
-      --accent: #1f4e79;      /* AAAI 深蓝色调 */
+      --accent: #1f4e79;
       --accent-soft: #eaf1f8;
       --border: #e4e4e4;
       --card: #fafafa;
@@ -32,8 +31,8 @@
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-        "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
       color: var(--fg);
       background: var(--bg);
       line-height: 1.65;
@@ -43,7 +42,6 @@
     a:hover { text-decoration: underline; }
     .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 
-    /* ---------- 顶部导航 ---------- */
     header.nav {
       position: sticky; top: 0; z-index: 10;
       background: color-mix(in srgb, var(--bg) 88%, transparent);
@@ -55,15 +53,12 @@
       height: 56px;
     }
     header.nav .brand { font-weight: 700; letter-spacing: .2px; }
-    header.nav nav a {
-      margin-left: 18px; color: var(--muted); font-size: 15px;
-    }
+    header.nav nav a { margin-left: 18px; color: var(--muted); font-size: 15px; }
     header.nav nav a:hover { color: var(--accent); text-decoration: none; }
     @media (max-width: 560px) {
       header.nav nav a { margin-left: 12px; font-size: 14px; }
     }
 
-    /* ---------- Hero ---------- */
     .hero { padding: 56px 0 32px; }
     .hero .wrap { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
     .avatar {
@@ -71,7 +66,7 @@
       object-fit: cover; border: 3px solid var(--accent-soft);
       background: var(--accent-soft);
       display: flex; align-items: center; justify-content: center;
-      font-size: 48px; color: var(--accent); font-weight: 700; flex: none;
+      font-size: 44px; color: var(--accent); font-weight: 700; flex: none;
     }
     .hero h1 { margin: 0 0 6px; font-size: 32px; letter-spacing: .3px; }
     .hero .role { margin: 0 0 4px; color: var(--muted); font-size: 17px; }
@@ -84,7 +79,6 @@
     }
     .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
-    /* ---------- 章节 ---------- */
     section { padding: 26px 0; border-top: 1px solid var(--border); }
     section h2 {
       font-size: 20px; margin: 0 0 14px;
@@ -112,30 +106,17 @@
     .pub .ptitle { font-weight: 600; }
     .pub .pmeta { color: var(--muted); font-size: 14px; }
 
-    .edu-item { margin-bottom: 12px; }
-    .edu-item .yr { color: var(--muted); font-size: 14px; }
-
     footer {
       padding: 28px 0 40px; color: var(--muted);
       font-size: 14px; border-top: 1px solid var(--border);
-    }
-
-    /* 醒目的填写提示,填完可删除 .todo 相关内容 */
-    .todo {
-      background: #fff7e6; border: 1px dashed #e0a94c; color: #8a5a00;
-      padding: 12px 16px; border-radius: 10px; font-size: 14px; margin: 20px 0;
-    }
-    @media (prefers-color-scheme: dark) {
-      .todo { background: #2a2413; border-color: #7a5a1a; color: #e0b866; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ============ 顶部导航 ============ -->
   <header class="nav">
     <div class="wrap">
-      <div class="brand">Your Name</div>
+      <div class="brand">Li Chengaung</div>
       <nav>
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -145,21 +126,16 @@
     </div>
   </header>
 
-  <!-- ============ Hero ============ -->
   <div class="hero">
     <div class="wrap">
-      <!-- 有照片就把下面这行 div 换成: <img class="avatar" src="photo.jpg" alt="Your Name"> -->
-      <div class="avatar">YN</div>
+      <div class="avatar">LC</div>
       <div>
-        <h1>Your Name / 你的姓名</h1>
-        <p class="role">Ph.D. Student / Researcher · 研究方向一句话</p>
-        <p class="affil">School / Department, University · 城市, 国家</p>
+        <h1>Li Chengaung</h1>
+        <p class="role">Researcher · Large Language Models, Risk Analysis &amp; Autonomous Driving</p>
+        <p class="affil">Central South University · Changsha, China</p>
         <div class="links">
-          <a href="mailto:you@example.edu">✉ Email</a>
-          <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
-          <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="https://github.com/wangheng451" target="_blank" rel="noopener">GitHub</a>
+          <!-- 收到邮箱后我会在这里补一个 <a href="mailto:...">Email</a> -->
         </div>
       </div>
     </div>
@@ -167,78 +143,44 @@
 
   <div class="wrap">
 
-    <div class="todo">
-      📝 <strong>填写提示:</strong> 把本页所有 <em>Your Name / you@example.edu / University …</em> 等占位内容改成你的真实信息。
-      注册 AAAI / OpenReview 时,页面上的 <strong>姓名和邮箱要与你在系统里填写的一致</strong>,方便审核。填完后删掉这个黄框即可。
-    </div>
-
-    <!-- ============ About ============ -->
     <section id="about">
       <h2>About</h2>
       <p>
-        我是 <strong>你的姓名</strong>,现就读/任职于 <strong>某大学 某学院</strong>,
-        导师为 XXX 教授。我的研究兴趣是 ……(一到两句话简介,例如:基于大语言模型的居民出行行为建模)。
+        I am a researcher at <strong>Central South University</strong>. My work lies at the
+        intersection of <strong>large language models</strong>, transportation
+        <strong>risk analysis</strong>, and <strong>autonomous driving</strong>.
       </p>
       <p>
-        I am a Ph.D. student / researcher at <strong>University Name</strong>. My research focuses on
-        …… . I am currently working on ……
+        I am currently working on LLM-driven methods for real-time traffic crash risk
+        prediction, combining causal graph learning with large language models to improve
+        the accuracy and interpretability of safety-critical predictions.
       </p>
     </section>
 
-    <!-- ============ Research Interests ============ -->
     <section id="research">
       <h2>Research Interests</h2>
       <div>
         <span class="tag">Large Language Models</span>
-        <span class="tag">Agent-based Modeling</span>
-        <span class="tag">Human Mobility</span>
-        <span class="tag">Travel Behavior</span>
-        <span class="tag">数据挖掘</span>
+        <span class="tag">Risk Analysis</span>
+        <span class="tag">Autonomous Driving</span>
+        <span class="tag">Crash Risk Prediction</span>
+        <span class="tag">Causal Graph Learning</span>
       </div>
     </section>
 
-    <!-- ============ Publications ============ -->
     <section id="publications">
       <h2>Publications</h2>
-
       <div class="pub">
-        <div class="ptitle">Paper Title Goes Here.</div>
-        <div class="pmeta">Your Name, Co-author. <em>Venue / Conference</em>, 2025.
-          &nbsp;[<a href="#">PDF</a>] [<a href="#">Code</a>]</div>
+        <div class="ptitle">LLM-enhanced Causal Graph Learning for Real-time Crash Risk Prediction.</div>
+        <div class="pmeta">Li Chengaung. <em>Working paper</em>, 2026.</div>
       </div>
-
-      <div class="pub">
-        <div class="ptitle">Another Paper Title.</div>
-        <div class="pmeta">Your Name, et al. <em>Under review</em>, 2026.</div>
-      </div>
-
-      <p style="color:var(--muted);font-size:14px;">
-        （还没有论文也没关系,可以先写“Working on …”或删除本节;主页主要用于核实身份。）
-      </p>
     </section>
 
-    <!-- ============ Education ============ -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul class="clean">
-        <li class="edu-item">
-          <strong>Ph.D. in XXX</strong>, University Name
-          <span class="yr">· 2023 – present</span>
-        </li>
-        <li class="edu-item">
-          <strong>B.Sc. in XXX</strong>, University Name
-          <span class="yr">· 2019 – 2023</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- ============ Contact ============ -->
     <section id="contact">
       <h2>Contact</h2>
       <ul class="clean">
-        <li>✉ <a href="mailto:you@example.edu">you@example.edu</a></li>
-        <li>🏛 School / Department, University Name</li>
-        <li>📍 城市, 国家</li>
+        <li>🏛 Central South University, Changsha, China</li>
+        <li>💻 <a href="https://github.com/wangheng451" target="_blank" rel="noopener">github.com/wangheng451</a></li>
       </ul>
     </section>
 
@@ -246,7 +188,7 @@
 
   <footer>
     <div class="wrap">
-      © <span id="year">2026</span> Your Name. Built with GitHub Pages.
+      © <span id="year">2026</span> Li Chengaung.
     </div>
   </footer>
 
